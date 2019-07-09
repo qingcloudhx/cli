@@ -8,7 +8,7 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/project-flogo/cli/util"
+	"github.com/qingcloudhx/cli/util"
 )
 
 // This Go program is aimed at being called by go:generate from "cmd/flogo/main.go" to create a "currentversion.go" file
@@ -18,7 +18,7 @@ import (
 // parse the version from the source. Hence it is possible to distribute the CLI as a fully static binary.
 //
 // Users getting the CLI with a classic "go get" command will still have the version retrieved from the directory
-// $GOPATH/src/github.com/project-flogo/cli
+// $GOPATH/src/github.com/qingcloudhx/cli
 func main() {
 	currentVersion := util.GetVersion(false)
 

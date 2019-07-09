@@ -126,7 +126,7 @@ Flags:
 Install the basic REST trigger:
 
 ```bash
-$ flogo install github.com/project-flogo/contrib/trigger/rest
+$ flogo install github.com/qingcloudhx/contrib/trigger/rest
 ```
 Install a contribution that you are currently developing on your computer:
 
@@ -192,9 +192,9 @@ $ flogo plugin list
 Install the legacy support plugin:
 
 ```bash
-$ flogo plugin install github.com/project-flogo/legacybridge/cli`
+$ flogo plugin install github.com/qingcloudhx/legacybridge/cli`
 ```
-_**Note:** more information on the legacy support plugin can be found [here](https://github.com/project-flogo/legacybridge/tree/master/cli)_
+_**Note:** more information on the legacy support plugin can be found [here](https://github.com/qingcloudhx/legacybridge/tree/master/cli)_
 
 Install and use custom plugin:
 
@@ -219,11 +219,11 @@ Usage:
 Update you log activity to master:
 
 ```bash
-$ flogo update github.com/project-flogo/contrib/activity/log@master
+$ flogo update github.com/qingcloudhx/contrib/activity/log@master
 ```
 
 Update your flogo core library to latest master:
 
 ```bash
-$ flogo update github.com/project-flogo/core@master
+$ flogo update github.com/qingcloudhx/core@master
 ```

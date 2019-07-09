@@ -9,12 +9,12 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/project-flogo/cli/common"
-	"github.com/project-flogo/cli/util"
+	"github.com/qingcloudhx/cli/common"
+	"github.com/qingcloudhx/cli/util"
 )
 
 const (
-	flogoCoreRepo = "github.com/project-flogo/core"
+	flogoCoreRepo = "github.com/qingcloudhx/core"
 	fileFlogoJson = "flogo.json"
 	fileMainGo    = "main.go"
 	fileImportsGo = "imports.go"

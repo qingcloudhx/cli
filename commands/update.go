@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/project-flogo/cli/api"
-	"github.com/project-flogo/cli/common"
+	"github.com/qingcloudhx/cli/api"
+	"github.com/qingcloudhx/cli/common"
 	"github.com/spf13/cobra"
 )
 

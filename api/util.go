@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/project-flogo/cli/common"
-	"github.com/project-flogo/core/app"
+	"github.com/qingcloudhx/cli/common"
+	"github.com/qingcloudhx/core/app"
 )
 
 func readAppDescriptor(project common.AppProject) (*app.Config, error) {
@@ -32,7 +32,7 @@ func readAppDescriptor(project common.AppProject) (*app.Config, error) {
 	return &appDescriptor, nil
 }
 
-func writeAppDescriptor(project common.AppProject, appDescriptor *app.Config)  error {
+func writeAppDescriptor(project common.AppProject, appDescriptor *app.Config) error {
 
 	appDescriptorUpdated, err := json.MarshalIndent(appDescriptor, "", "  ")
 	if err != nil {

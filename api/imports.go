@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/project-flogo/cli/common"
-	"github.com/project-flogo/cli/util"
-	"github.com/project-flogo/core/app"
+	"github.com/qingcloudhx/cli/common"
+	"github.com/qingcloudhx/cli/util"
+	"github.com/qingcloudhx/core/app"
 )
 
 func ListProjectImports(project common.AppProject) error {
@@ -151,5 +151,3 @@ func updateDescriptorImportVersions(project common.AppProject, appDescriptor *ap
 
 	return nil
 }
-
-

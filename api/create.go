@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/project-flogo/cli/common"
-	"github.com/project-flogo/cli/util"
+	"github.com/qingcloudhx/cli/common"
+	"github.com/qingcloudhx/cli/util"
 )
 
 var fileSampleFlogoJson = filepath.Join("examples", "engine", "flogo.json")

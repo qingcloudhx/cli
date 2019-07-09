@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/project-flogo/cli/util"
+	"github.com/qingcloudhx/cli/util"
 )
 
 const (

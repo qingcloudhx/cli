@@ -10,12 +10,12 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/project-flogo/cli/common"
-	"github.com/project-flogo/cli/util"
+	"github.com/qingcloudhx/cli/common"
+	"github.com/qingcloudhx/cli/util"
 )
 
 const (
-	pkgLegacySupport = "github.com/project-flogo/legacybridge"
+	pkgLegacySupport = "github.com/qingcloudhx/legacybridge"
 )
 
 func InstallLegacySupport(project common.AppProject) error {
@@ -92,7 +92,7 @@ func CreateLegacyMetadata(path, contribType, contribPkg string) error {
 var tplActivityMetadataGoFile = `package {{.Package}}
 
 import (
-	"github.com/project-flogo/legacybridge"
+	"github.com/qingcloudhx/legacybridge"
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 )
 
@@ -108,7 +108,7 @@ func init() {
 var tplTriggerMetadataGoFile = `package {{.Package}}
 
 import (
-	"github.com/project-flogo/legacybridge"
+	"github.com/qingcloudhx/legacybridge"
 	"github.com/TIBCOSoftware/flogo-lib/core/trigger"
 )
 

@@ -18,8 +18,8 @@ var jsonString = `{
   "appModel": "1.0.0",
   "imports": [
     "github.com/TIBCOSoftware/flogo-contrib/activity/log",
-    "github.com/project-flogo/contrib/trigger/rest",
-    "github.com/project-flogo/flow"
+    "github.com/qingcloudhx/contrib/trigger/rest",
+    "github.com/qingcloudhx/flow"
   ],
   "triggers": [
     {

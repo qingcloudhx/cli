@@ -9,8 +9,8 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/project-flogo/cli/common"
-	"github.com/project-flogo/cli/util"
+	"github.com/qingcloudhx/cli/common"
+	"github.com/qingcloudhx/cli/util"
 	"github.com/spf13/cobra"
 )
 
@@ -30,7 +30,7 @@ func init() {
 
 var (
 	goPath     = os.Getenv("GOPATH")
-	cliPath    = filepath.Join(goPath, filepath.Join("src", "github.com", "project-flogo", "cli"))
+	cliPath    = filepath.Join(goPath, filepath.Join("src", "github.com", "qingcloudhx", "cli"))
 	cliCmdPath = filepath.Join(cliPath, "cmd", "flogo")
 )
 

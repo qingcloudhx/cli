@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/project-flogo/cli/commands"
+	"github.com/qingcloudhx/cli/commands"
 )
 
 // Not set by default, will be filled by init() function in "./currentversion.go" file, if it exists.

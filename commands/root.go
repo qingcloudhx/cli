@@ -2,9 +2,9 @@ package commands
 
 import (
 	"fmt"
-	"github.com/project-flogo/cli/api"
-	"github.com/project-flogo/cli/common"
-	"github.com/project-flogo/cli/util"
+	"github.com/qingcloudhx/cli/api"
+	"github.com/qingcloudhx/cli/common"
+	"github.com/qingcloudhx/cli/util"
 	"github.com/spf13/cobra"
 	"os"
 )

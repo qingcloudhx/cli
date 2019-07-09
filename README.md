@@ -34,7 +34,7 @@ To get started with the Flogo CLI you'll need to have a few things
 To install the CLI, simply open a terminal and enter the below command
 
 ```
-$ go get -u github.com/project-flogo/cli/...
+$ go get -u github.com/qingcloudhx/cli/...
 ```
 
 _Note that the -u parameter automatically updates the cli if it exists_
@@ -44,7 +44,7 @@ You can build the cli from source code as well, which is convenient if you're de
 
 ```bash
 # Get the flogo CLI from GitHub
-$ git clone https://github.com/project-flogo/cli.git
+$ git clone https://github.com/qingcloudhx/cli.git
 
 # Go to the directory
 $ cd cli
@@ -68,9 +68,9 @@ First, create a file called `flogo.json` and with the below content (which is a 
   "version": "0.0.1",
   "appModel": "1.1.0",
   "imports": [
-  	"github.com/project-flogo/contrib/trigger/rest",
-  	"github.com/project-flogo/flow",
-  	"github.com/project-flogo/contrib/activity/log"
+  	"github.com/qingcloudhx/contrib/trigger/rest",
+  	"github.com/qingcloudhx/flow",
+  	"github.com/qingcloudhx/contrib/activity/log"
   ],
   "triggers": [
     {
@@ -159,11 +159,11 @@ Want to contribute to Project Flogo? We've made it easy, all you need to do is f
 
 Not sure where to start? No problem, you can browse the Project Flogo repos and look for issues tagged `kind/help-wanted` or `good first issue`. To make this even easier, we've added the links right here too!
 * Project Flogo: [kind/help-wanted](https://github.com/TIBCOSoftware/flogo/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/TIBCOSoftware/flogo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-* flogo cli: [kind/help-wanted](https://github.com/project-flogo/cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/project-flogo/cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-* flogo core: [kind/help-wanted](https://github.com/project-flogo/core/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/project-flogo/core/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-* flogo contrib: [kind/help-wanted](https://github.com/project-flogo/contrib/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/project-flogo/contrib/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+* flogo cli: [kind/help-wanted](https://github.com/qingcloudhx/cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/qingcloudhx/cli/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+* flogo core: [kind/help-wanted](https://github.com/qingcloudhx/core/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/qingcloudhx/core/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+* flogo contrib: [kind/help-wanted](https://github.com/qingcloudhx/contrib/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and [good first issue](https://github.com/qingcloudhx/contrib/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
-Another great way to contribute to Project Flogo is to check [flogo-contrib](https://github.com/project-flogo/contrib). That repository contains some basic contributions, such as activities, triggers, etc. Perhaps there is something missing? Create a new activity or trigger or fix a bug in an existing activity or trigger.
+Another great way to contribute to Project Flogo is to check [flogo-contrib](https://github.com/qingcloudhx/contrib). That repository contains some basic contributions, such as activities, triggers, etc. Perhaps there is something missing? Create a new activity or trigger or fix a bug in an existing activity or trigger.
 
 If you have any questions, feel free to post an issue and tag it as a question, email flogo-oss@tibco.com or chat with the team and community:
 
@@ -173,4 +173,4 @@ If you have any questions, feel free to post an issue and tag it as a question, 
 For additional details, refer to the [Contribution Guidelines](https://github.com/TIBCOSoftware/flogo/blob/master/CONTRIBUTING.md).
 
 ## License 
-Flogo source code in [this](https://github.com/project-flogo/cli) repository is under a BSD-style license, refer to [LICENSE](https://github.com/project-flogo/cli/blob/master/LICENSE) 
+Flogo source code in [this](https://github.com/qingcloudhx/cli) repository is under a BSD-style license, refer to [LICENSE](https://github.com/qingcloudhx/cli/blob/master/LICENSE) 
