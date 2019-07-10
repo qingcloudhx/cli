@@ -3,11 +3,13 @@ package commands
 import (
 	"fmt"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"runtime"
 
 	"github.com/qingcloudhx/cli/api"
 	"github.com/qingcloudhx/cli/common"
+	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
 
@@ -92,9 +94,11 @@ func copyBin(verbose bool, tempProject common.AppProject) {
 			os.Exit(1)
 		}
 	} else {
-		err = os.Rename(tempProject.Executable(), filepath.Join(currDir, tempProject.Name()))
+		log.WithField("build", "Rename").Infof("%s -> %s", tempProject.Executable(), filepath.Join(currDir, tempProject.Name()))
+		err = exec.Command("mv", tempProject.Executable(), filepath.Join(currDir, tempProject.Name())).Run()
+		//err = os.Rename(tempProject.Executable(), filepath.Join(currDir, tempProject.Name()))
 		if err != nil {
-			fmt.Fprintf(os.Stderr, "Error renaming executable: %v\n", err)
+			log.WithField("build", "Rename").Errorf("Error renaming executable: %v\n", err)
 			os.Exit(1)
 		}
 	}

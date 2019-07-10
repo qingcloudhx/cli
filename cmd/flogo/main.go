@@ -17,3 +17,6 @@ func main() {
 	commands.Initialize(Version)
 	commands.Execute()
 }
+func init() {
+	Version = "v0.9.0-2-g636d956-dirty"
+}
