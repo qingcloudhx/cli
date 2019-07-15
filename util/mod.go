@@ -280,7 +280,7 @@ func ExecCmd(cmd *exec.Cmd, workingDir string) error {
 }
 
 func (m *ModDepManager) AddReplacedContribForBuild() error {
-	os.Setenv("GOPROXY", "http://139.198.19.52:10081")
+	//os.Setenv("GOPROXY", "http://139.198.19.52:10081")
 	err := ExecCmd(exec.Command("go", "mod", "download"), m.srcDir)
 	if err != nil {
 		return err
