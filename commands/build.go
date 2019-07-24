@@ -56,7 +56,7 @@ var buildCmd = &cobra.Command{
 			api.SetVerbose(verbose)
 			tempProject, err := api.CreateProject(tempDir, "", flogoJsonFile, "latest")
 			if err != nil {
-				fmt.Fprintf(os.Stderr, "Error creating temp project: %v\n", err)
+				fmt.Fprintf(os.Stderr, "Error creating temp project tempDir:%s,err: %+v\n", tempDir, err)
 				os.Exit(1)
 			}
 
