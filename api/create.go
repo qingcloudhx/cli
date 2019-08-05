@@ -110,6 +110,9 @@ func createAppDirectory(basePath, appName string) (string, error) {
 	}
 
 	appPath := filepath.Join(basePath, appName)
+	if _, err = os.Stat(appPath); err == nil {
+		os.RemoveAll(appPath)
+	}
 	err = os.Mkdir(appPath, os.ModePerm)
 	if err != nil {
 		return "", err

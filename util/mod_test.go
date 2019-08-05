@@ -15,3 +15,10 @@ func TestExecCmd(t *testing.T) {
 	err := ExecCmd(cmd, "/home/code/flowgoEx/src/cli/util")
 	assert.Nil(t, err)
 }
+func TestRun(t *testing.T) {
+	cmd := exec.Command("/home/code/test/device", "-conf", "/home/code/test/ficti_flow.json")
+	cmd.Env = []string{"FLOGO_LOG_LEVEL=DEBUG"}
+	SetVerbose(true)
+	err := ExecCmd(cmd, "/home/code/flowgoEx/src/cli/util")
+	assert.Nil(t, err)
+}

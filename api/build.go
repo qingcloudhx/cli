@@ -103,7 +103,7 @@ func BuildProject(project common.AppProject, options BuildOptions) error {
 		if err != nil {
 			return err
 		}
-		fmt.Printf("rename %s->%s", exePath, project.Executable())
+		fmt.Printf("rename %s->%s\n", exePath, project.Executable())
 		err = os.Rename(exePath, project.Executable())
 		if err != nil {
 			return err
