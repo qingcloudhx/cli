@@ -33,7 +33,7 @@ func BuildProject(project common.AppProject, options BuildOptions) error {
 	}
 
 	useShim := options.Shim != ""
-
+	//TODO create config to string
 	err = createEmbeddedAppGoFile(project, options.EmbedConfig || useShim)
 	if err != nil {
 		return err

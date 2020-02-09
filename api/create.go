@@ -3,6 +3,7 @@ package api
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/qingcloudhx/cli/template"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -73,7 +74,7 @@ func CreateProject(basePath, appName, appCfgPath, coreVersion string) (common.Ap
 	if err != nil {
 		return nil, err
 	}
-
+	fmt.Println("create main ", appDir)
 	err = createMain(dm, appDir)
 	if err != nil {
 		return nil, err
@@ -93,7 +94,6 @@ func CreateProject(basePath, appName, appCfgPath, coreVersion string) (common.Ap
 	if Verbose() {
 		fmt.Printf("Created App: %s\n", appName)
 	}
-
 	return project, nil
 }
 
@@ -241,22 +241,24 @@ func importDependencies(project common.AppProject) error {
 
 func createMain(dm util.DepManager, appDir string) error {
 
-	flogoCoreImport, err := util.NewFlogoImportFromPath(flogoCoreRepo)
-	if err != nil {
-		return err
-	}
-
-	corePath, err := dm.GetPath(flogoCoreImport)
-	if err != nil {
-		return err
-	}
-
-	bytes, err := ioutil.ReadFile(filepath.Join(corePath, fileSampleEngineMain))
-	if err != nil {
-		return err
-	}
-
-	err = ioutil.WriteFile(filepath.Join(appDir, dirSrc, fileMainGo), bytes, 0644)
+	//flogoCoreImport, err := util.NewFlogoImportFromPath(flogoCoreRepo)
+	//if err != nil {
+	//	return err
+	//}
+	//
+	//corePath, err := dm.GetPath(flogoCoreImport)
+	//if err != nil {
+	//	return err
+	//}
+	////temp := filepath.Join(corePath, fileSampleEngineMain)
+	//bytes, err := ioutil.ReadFile(filepath.Join(corePath, fileSampleEngineMain))
+	//if err != nil {
+	//	return err
+	//}
+	//fmt.Println("create app ",temp)
+	//fmt.Println("create content ",string(bytes))
+	//todo  fix main file
+	err := ioutil.WriteFile(filepath.Join(appDir, dirSrc, fileMainGo), []byte(template.Main), 0644)
 	if err != nil {
 		return err
 	}
